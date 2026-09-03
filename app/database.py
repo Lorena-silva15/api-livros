@@ -5,7 +5,7 @@ from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 class Configuracoes(BaseSettings):
     db_user: str
-    db_password: str ="livro"
+    db_password: str =""
     db_host: str = "localhost"
     db_port: int = 3306
     db_name: str ="biblioteca_db"
