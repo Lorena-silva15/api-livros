@@ -7,11 +7,10 @@ from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
 class Configuracoes(BaseSettings):
     db_user: str
-    db_password: str =""
+    db_password: str
     db_host: str = "localhost"
     db_port: int = 3306
-    db_name: str ="biblioteca_db"
-   
+    db_name: str="biblioteca_db"
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
