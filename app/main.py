@@ -51,3 +51,5 @@ def obter_livro(id_livro: int, sessao_banco: Session = Depends(obter_sessao_banc
         raise HTTPException(status_code=404, detail="Livro não encontrado")
 
     return livro
+
+# etapa 3
